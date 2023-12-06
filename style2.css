@@ -18,7 +18,7 @@ body {
   max-width: 150px; 
   margin-right: 100px; 
   padding-left: 50px;
-  
+
 }
 
 .about-content {
@@ -56,23 +56,24 @@ a {
 
 
 @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
   }
 }
 
 .navbar-comp {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
  
 }
 
 .navbar-link {
-  margin-left: 180px;
+  margin-left: 200px;
   font-size: larger;
   text-decoration: none;
   
@@ -81,4 +82,5 @@ a {
 .navbar-comp a:hover{
   color: orange;
 }
+
 

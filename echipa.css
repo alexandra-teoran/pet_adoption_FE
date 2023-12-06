@@ -49,19 +49,9 @@ body {
     justify-content: center;
     
 }
-.exempleanunturi{
+.container{
     margin-top: 50px;
     justify-content: space-evenly;
     display: flex ;
     
 }
-/* nu merge sa mut bara de cautari mai spre dreapta, si nici sa pun background ul (fara bara de sus )culoarea asta :ffd633; */
-.searchbar {
-    display: block;
-  min-width: 150px;
-  margin: auto;
-  border: 1px solid gray;
-  border-radius: 1.25rem;
-  padding: 0.5rem;
-}
-
