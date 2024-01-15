@@ -3,26 +3,22 @@
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AdoptaSalveazaIubeste</title>
-   <!-- nu stiu daca cele 2 link uri fix de sub is necesare sau nu, incearca sa le stergi sa vezi ce se intampla:))-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style2.css">
 </head>
 
 
 
   <body>
-      <nav class="navbar-comp">
-        
-        <a class="navbar-link "><a href="indexsucces.html">Acasa</a></a>
-        <a class="navbar-link "><a href="contact.html">Contacteaza-ne!</a></a>
-        <a class="navbar-link "><a href="echipa.html">Echipa</a></a>
-        <a class="navbar-link "><a href="anunturi.html">Anunturi</a></a>
-       
-        
-        <a class="navbar-link "><a href="login.html" style="text-decoration: none;">Conecteaza-te</a></a>
-        
-      </nav>
+    <nav class="navbar-comp">
+      <a class="navbar-link "><a href="indexsucces.html">Acasa</a></a>
+      <a class="navbar-link "><a href="contact.html">Contacteaza-ne!</a></a>
+      <a class="navbar-link "><a href="echipa.html">Echipa</a></a>
+      <a class="navbar-link "><a href="anunturi.html">Anunturi</a></a>
+      <a class="navbar-link "><a href="formularanunturi.html">Posteaza anunt</a></a>
+      <a class="navbar-link "><a href="login.html" style="text-decoration: none;">Conecteaza-te</a></a>
+      
+    </nav>
+  
 
       <div class="about">
         <img src="logo2.png" style="width: 170px;height: 170px; margin-right: 20px;margin-left: 20px; border-radius: 150px 150px 150px 150px;"/>
@@ -39,6 +35,23 @@
       
       <h2 style="padding-top: 30px;">Nume : AdoptaSalveazaIubeste</h2>
       <h2>IBAN: ***********</h2>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            initializePage();
+    
+            // Verifică dacă utilizatorul este autentificat
+            const userId = localStorage.getItem('userId');
+            if (userId) {
+                // Utilizatorul este autentificat, afișează elementele relevante în navbar
+                document.getElementById('addAnuntLink').style.display = 'inline';
+                document.getElementById('loginLink').style.display = 'none'; // Ascunde link-ul de login
+            } else {
+                // Utilizatorul nu este autentificat, ascunde elementele relevante în navbar
+                document.getElementById('addAnuntLink').style.display = 'none';
+                document.getElementById('loginLink').style.display = 'inline'; // Afișează link-ul de login
+            }
+        });
+    </script>
   </body>
 
 </html>

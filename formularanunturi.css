@@ -7,20 +7,24 @@ body {
 
 .container {
     max-width: 400px;
-    margin: 50px auto;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 40px 40px 40px;
+    padding: 100px;
+    height: 400px;
+    margin: 0 auto;
 }
 
-form {
+.anuntForm {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 label {
     margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
 }
 
 input,
@@ -30,10 +34,37 @@ button {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%;
 }
 
 button {
-    background-color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #ffd633;
     color: #fff;
+    border: none;
     cursor: pointer;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffd633
+  }
+  
+  .back-button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #ffd633;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-button:hover {
+    background-color: #ffd633;
+  }
+
+  h2{
+    text-align: center;
+  }

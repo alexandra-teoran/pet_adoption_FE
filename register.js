@@ -51,7 +51,7 @@ function submitForm(event) {
     .then(data => {
         console.log('Utilizator înregistrat cu succes:', data);
         // Poți face orice acțiune după înregistrarea cu succes a utilizatorului.
-        window.location.href = 'index.html';
+        window.location.href = 'indexsucces.html';
     })
     .catch(error => {
         console.error('Eroare la înregistrarea utilizatorului:', error);

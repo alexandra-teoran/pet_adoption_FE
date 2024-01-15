@@ -1,10 +1,12 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="contact.css">
+        <title>Contact</title>
     </head>
     <body style="background-color: #ffd633">
 <form class="contact-form" action="/submit-contact-form" method="post">
     <div class="form-group">
+      <h2>Contact</h2>
       <label for="name">Nume:</label>
       <input type="text" id="name" name="name" required>
     </div>
@@ -20,7 +22,9 @@
       <label for="message">Mesaj:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
     </div>
-    <button type="submit">Trimite</button>
+    <button type="button" onclick="submitForm()">Adauga Anunt</button>
+    <button class="back-button"><a href="indexsucces.html" style="text-decoration: none;">Inapoi</a></button>
   </form>
+  <script src="contact.js"></script>
     </body>
   </html>

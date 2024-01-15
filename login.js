@@ -1,6 +1,7 @@
 function submitLoginForm(event) {
     event.preventDefault();
 
+
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
@@ -30,19 +31,45 @@ function submitLoginForm(event) {
         })
     })
     .then(response => {
-        if (response.ok) {
+        console.log('Response status:', response.status);
+    
+        // Afișează întregul obiect de răspuns în consolă pentru investigare
+        return response.json();
+    })
+    .then(data => {
+        console.log('Server response:', data);
+    
+        if (data.token) {
             console.log('Conectare reușită!');
-            // Poți face orice acțiune după conectarea cu succes.
-            window.location.href = 'index.html'; // Redirecționează către pagina principală
+    
+            // Salvare token și ID utilizator în localStorage
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('userId', data.userId);
+    
+            // Redirecționare către index.html
+            window.location.href = 'indexsucces.html';
         } else {
             console.log('Conectare eșuată.');
-            // Poți afișa un mesaj de eroare sau alte acțiuni în caz de eșec.
+            // Afișare mesaj de eroare sau alte acțiuni în caz de eșec
         }
     })
     .catch(error => {
         console.error('Eroare la conectarea utilizatorului:', error);
     });
 }
+
+// Funcție pentru a verifica structura adresei de email
+function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Funcție pentru a verifica structura parolei
+function isValidPassword(password) {
+    var passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-_]).{8,}$/;
+    return passwordRegex.test(password);
+}
+
 
 // Funcție pentru a verifica structura adresei de email
 function isValidEmail(email) {
