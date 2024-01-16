@@ -25,3 +25,7 @@ function submitForm() {
         console.error('Eroare la inregistrarea mesajului:', error);
     });
 }
+
+function back(){
+    window.location.href = 'indexsucces.html';
+}

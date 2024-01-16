@@ -50,3 +50,6 @@ function getUserId() {
     return userId;
 }
 
+function back(){
+    window.location.href = 'indexsucces.html';
+}

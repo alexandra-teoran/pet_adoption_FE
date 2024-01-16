@@ -1,9 +1,11 @@
 .contact-form {
-  background-color: #ffffe6;
-  border-radius: 40px;
+  background-color: rgba(255, 255, 230, 0.5);
+  border-radius: 10px;
   padding: 40px; 
   max-width: 600px; 
   margin: 0 auto;
+  margin-top: 70px;
+
 }
 
 .form-group {
@@ -25,19 +27,20 @@ textarea {
   margin-bottom: 10px; 
 }
 
-button, .back_button {
+button, back_button {
   padding: 15px 30px; 
   border-radius: 4px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ffd633;
+  color: black;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: inline-block; 
+  margin-right: 20px;
 }
 
-button:hover, .back_button:hover {
-  background-color: #0056b3;
+button:hover, back_button:hover {
+  background-color: #ffe6b3;
 }
 
 h2 {
@@ -57,7 +60,14 @@ h2 {
     padding: 8px;
   }
 
-  button, .back_button {
-    padding: 12px 24px;
+  button, back_button {
+    padding: 15px 30px; 
+    border-radius: 4px;
+    background-color: #ffd633;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; 
   }
 }

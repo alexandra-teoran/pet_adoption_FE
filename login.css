@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
 }
 
 .login-form {
@@ -17,43 +16,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .email-input,
 .password-input {
   border: 1px solid #64C292;
   background: white;
-  padding: 10px 15px; 
+  padding: 10px 10px 10px 10px; 
   border-radius: 10px;
-  margin-bottom: 15px; 
-  width: 100%;
   color: black;
+  width: 260px;
 }
 
-.login-button,
-.register-button,
-.google-button {
-  background-color: #6ED9A0;
-  border: 1px solid #64C292;
-  color: #FFFFFF;
-  margin-top: 5px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px 30px; 
-  font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
-}
 
-.google-button {
-  background-color: #6ED9A0;
-}
+
+
 
 .branding-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
   color: white;
-  margin-right: 10px; 
-  margin-bottom: 20px; 
+  margin-right: 200px; 
+  margin-bottom: 70px; 
   font-size: 20px;
 }
 
@@ -82,4 +67,64 @@ h5 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.register-button{
+  background-color:cadetblue;
+  border:  1px solid #64C292;
+ 
+  color: #FFFFFF;
+  margin-top: 30px;
+  text-align: center;
+  
+  border-radius: 10px;
+ 
+  padding:  10px 85px 10px 85px;
+  
+  font-size: 16px;
+
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.google-button{
+  background-color: #6ED9A0;
+  border:  1px solid #64C292;
+
+  color: #FFFFFF;
+  margin-top: 5px;
+  text-align: center;
+  
+  border-radius: 10px;
+ 
+  padding:  10px 50px 10px 50px;
+ 
+  font-size: 16px;
+  
+  font-family: "Source Sans Pro", sans-serif;
+  
+}
+
+.login-button{
+  background-color: #6ED9A0;
+  border:  1px solid #64C292;
+
+  color: #FFFFFF;
+  margin-top: 30px;
+  text-align: center;
+  
+  border-radius: 10px;
+ 
+  padding:  10px 85px 10px 85px;
+ 
+  font-size: 16px;
+  
+  font-family: "Source Sans Pro", sans-serif;
+  
+}
+
+
+label {
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
 }
