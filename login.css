@@ -1,134 +1,85 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-  background-color:#ffd633;
+  background-color: #ffd633;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.password-input {
-  border:  1px solid #64C292;
-  background:  white;
-  padding:  10px 30px 10px 30px;
-  border-radius:  10px;
-  color: bl;
-}
-
-.login-button {
-  background-color: #6ED9A0;
-  border:  1px solid #64C292;
-  
-  color: #FFFFFF;
-  margin-top:30px;
-  text-align: center;
- 
-  border-radius: 10px;
-
-  padding:  10px 85px 10px 85px;
-
-  font-size: 16px;
-  
-  font-family: "Source Sans Pro", sans-serif;
-
-  
-}
-
-.email-input {
-  border:  1px solid #64C292;
-  background:  white;
-  padding:  10px 30px 10px 30px;
-  border-radius:  10px;
-  color:  black;
+  margin: 0;
 }
 
 .login-form {
-
-  display:  flex;
-
+  display: flex;
   flex-direction: column;
-  
   justify-content: center;
   align-items: center;
+}
+
+.email-input,
+.password-input {
+  border: 1px solid #64C292;
+  background: white;
+  padding: 10px 15px; 
+  border-radius: 10px;
+  margin-bottom: 15px; 
+  width: 100%;
+  color: black;
+}
+
+.login-button,
+.register-button,
+.google-button {
+  background-color: #6ED9A0;
+  border: 1px solid #64C292;
+  color: #FFFFFF;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 30px; 
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.google-button {
+  background-color: #6ED9A0;
 }
 
 .branding-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; 
   color: white;
-  margin-right: 200px;
-  margin-bottom:70px;
-  font-size:20px;
+  margin-right: 10px; 
+  margin-bottom: 20px; 
+  font-size: 20px;
 }
 
 .title-container {
-  display:  flex;
+  display: flex;
   flex-direction: column;
- 
   justify-content: center;
-  
   align-items: flex-start;
-  
-
 }
 
-.button a :hover{
-  color: red;
+h5 {
+  color: grey;
 }
 
-h5{
-  color:grey;
+.login-form a {
+  color: white;
+  text-decoration: none; 
 }
 
-.login-form a{
-color: white;
+.login-form a:hover {
+  color: black;
 }
-.login-form a:hover{
-color: black; 
-}
+
 .page-container {
-  display:  flex;
+  display: flex;
   justify-content: center;
-  align-items:  center;
-  flex-wrap:  wrap;
-}
-
-.register-button{
-  background-color:cadetblue;
-  border:  1px solid #64C292;
- 
-  color: #FFFFFF;
-  margin-top: 5px;
-  text-align: center;
-  
-  border-radius: 10px;
- 
-  padding:  10px 85px 10px 85px;
-  
-  font-size: 16px;
-
-  font-family: "Source Sans Pro", sans-serif;
- 
-}
-
-.google-button{
-  background-color: #6ED9A0;
-  border:  1px solid #64C292;
-
-  color: #FFFFFF;
-  margin-top: 5px;
-  text-align: center;
-  
-  border-radius: 10px;
- 
-  padding:  10px 85px 10px 85px;
- 
-  font-size: 16px;
-  
-  font-family: "Source Sans Pro", sans-serif;
-  
+  align-items: center;
+  flex-wrap: wrap;
 }

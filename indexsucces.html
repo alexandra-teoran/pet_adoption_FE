@@ -15,8 +15,8 @@
       <a class="navbar-link "><a href="echipa.html">Echipa</a></a>
       <a class="navbar-link "><a href="anunturi.html">Anunturi</a></a>
       <a class="navbar-link "><a href="formularanunturi.html">Posteaza anunt</a></a>
-      <a class="navbar-link "><a href="login.html" style="text-decoration: none;">Conecteaza-te</a></a>
-      
+      <a class="navbar-link "><a href="account.html">Profil</a></a>
+      <a class="navbar-link "><a href="login.html" style="text-decoration: none;">Conecteaza-te</a></a> 
     </nav>
   
 
@@ -35,23 +35,7 @@
       
       <h2 style="padding-top: 30px;">Nume : AdoptaSalveazaIubeste</h2>
       <h2>IBAN: ***********</h2>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            initializePage();
-    
-            // Verifică dacă utilizatorul este autentificat
-            const userId = localStorage.getItem('userId');
-            if (userId) {
-                // Utilizatorul este autentificat, afișează elementele relevante în navbar
-                document.getElementById('addAnuntLink').style.display = 'inline';
-                document.getElementById('loginLink').style.display = 'none'; // Ascunde link-ul de login
-            } else {
-                // Utilizatorul nu este autentificat, ascunde elementele relevante în navbar
-                document.getElementById('addAnuntLink').style.display = 'none';
-                document.getElementById('loginLink').style.display = 'inline'; // Afișează link-ul de login
-            }
-        });
-    </script>
+      
   </body>
 
 </html>

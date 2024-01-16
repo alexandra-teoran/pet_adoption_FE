@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+    <title>User Account</title>
+</head>
+<body>
+
+    <nav class="navbar-comp">
+        <img class="navbar-logo" height="80px" src="logo2.png">
+        <a class="navbar-link "><a href="indexsucces.html">Acasa</a></a>
+        <a class="navbar-link "><a href="contact.html">Contacteaza-ne!</a></a>
+        <a class="navbar-link "><a href="echipa.html">Echipa</a></a>
+        <a class="navbar-link "><a href="anunturi.html">Anunturi</a></a>
+        <a class="navbar-link "><a href="formularanunturi.html">Posteaza anunt</a></a>
+        <a class="navbar-link "><a href="account.html">Profil</a></a>
+        <a class="navbar-link "><a href="login.html" style="text-decoration: none;">Conecteaza-te</a></a> 
+      </nav>
+
+    <div id="user-info">
+        <h1>Welcome, <span id="user-name"></span>!</h1>
+        <h2>Your Anouncements:</h2>
+        <ul id="anunturi-list"></ul>
+    </div>
+
+
+    <script src="account.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", initializePage);
+    </script>
+</body>
+</html>
