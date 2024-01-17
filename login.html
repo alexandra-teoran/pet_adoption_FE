@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AdoptaSalveazaIubeste</title>   
+    <link rel="stylesheet" href="login.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>   
+<body>
+    <div class="page-container">
+        <div class="branding-container">
+            <img class="logo" src="logo2.png" style="width: 220px;height: 220px;border-radius: 250px 250px 250px 250px;" />
+            <div class="title-container">
+                <span class="title" style="margin-left: 40px; font-family:cursive; color: black;">Adopta Salveaza Iubeste</span>
+            </div>
+        </div>
+    
+        <form class="login-form" onsubmit="submitLoginForm(event)">
+            <h1>Bine ai venit!</h1>
+            <label>Email:</label>
+            <input id="email" class="email-input" value="" type="email" />
+
+            <label>Parola:</label>
+            <input id="password" class="password-input" value="" type="password"/>
+
+            <button type="submit" class="login-button">Conecteaza-te</button>
+            <p>Nu ai cont?</p>
+            <button class="register-button" onclick="register()">Inregistreaza-te</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

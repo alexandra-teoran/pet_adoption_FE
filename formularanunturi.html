@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formularanunturi.css">
+    <title>Adaugare Anunt</title>
+</head>
+<body style="background-color: #ffd633">
+
+    <div class="container">
+        <h2>Adaugare Anunt</h2>
+        <form id="anuntForm">
+            <label for="title">Titlu:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Descriere:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="image">Imagine:</label>
+            <input type="file" id="image" name="image" accept="image/*" required style="background-color: white; text-decoration: none; font-size: 15px;">
+
+            <button type="button" onclick="submitForm()">Adauga Anunt</button>
+            <button class="back-button" onclick="back()">Inapoi</button>
+        </form>
+    </div>
+
+    <script src="formularanunturi.js"></script>
+    <script>
+        var token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>

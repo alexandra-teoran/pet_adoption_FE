@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AdoptaSalveazaIubeste</title>   
+    <link rel="stylesheet" href="register.css">
+    
+</head>   
+<body>
+    <div class="page-container">
+        <div class="branding-container">
+            <img class="logo" src="logo2.png" style="width: 220px;height: 220px;border-radius: 250px 250px 250px 250px;" />
+            <div class="title-container">
+                <span class="title" style="margin-left: 40px; font-family:cursive; color: black;">Adopta Salveaza Iubeste</span>
+            </div>
+        </div>
+    
+        <form class="login-form" onsubmit="submitForm(event)">
+            <h1>Inregistreaza-te!</h1>
+            <p>Nume:</p>
+            <input id="name" class="name-input" value="" type="text" />
+    
+            <p>Email:</p>
+            <input id="email" class="email-input" value="" type="email" />
+    
+            <p>Adresa:</p>
+            <input id="address" class="adress-input" value="" type="text" />
+    
+            <p>Parola:</p>
+            <input id="password" class="password-input" value="" type="password"/>
+    
+            <p>Confirma parola:</p>
+            <input id="password2" class="password2-input" value="" type="password"/>
+    
+            <button type="submit" class="register-button">Inregistreaza-te</button>
+
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
