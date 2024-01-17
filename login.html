@@ -4,6 +4,7 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>AdoptaSalveazaIubeste</title>   
     <link rel="stylesheet" href="login.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>   
 <body>
     <div class="page-container">
@@ -23,10 +24,8 @@
             <input id="password" class="password-input" value="" type="password"/>
 
             <button type="submit" class="login-button">Conecteaza-te</button>
-            <p>sau</p>
-            <button class="google-button"><a href="google.html" style="text-decoration: none;">Conecteaza-te cu Google</a></button>
             <p>Nu ai cont?</p>
-            <button class="register-button" ><a href="register.html" style="text-decoration: none;">Inregistreaza-te</a></button>
+            <button class="register-button" onclick="register()">Inregistreaza-te</button>
         </form>
     </div>
     <script src="login.js"></script>

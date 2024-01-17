@@ -16,8 +16,9 @@ body {
 .poza-about {
   margin-top: 0;
   max-width: 150px;
-  margin-right: 100px;
-  padding-left: 50px;
+  margin-right: 50px;
+  padding-left: 100px;
+  margin-left: 300px;
 }
 
 .about-content {
@@ -128,6 +129,7 @@ a {
   align-items: center;
   padding: 20px;
   background-color: white;
+  height: 150px;
 }
 
 .navbar-link {

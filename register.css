@@ -82,16 +82,20 @@ body {
   
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  padding-top: 40px;
 }
 
 .branding-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   color: white;
-  margin-right: 200px;
-  margin-bottom:70px;
-  font-size:20px;
+  margin-right: 200px; 
+  margin-bottom: 70px; 
+  font-size: 30px;
+  padding-top: 200px;
 }
+
 
 .title-container {
   display:  flex;
@@ -141,20 +145,22 @@ color: black;
  
 }
 
-.google-button{
-  background-color: #6ED9A0;
-  border:  1px solid #64C292;
+p {
+  margin-bottom: 8px;
+  text-align: left;
+  align-self: self-start;
+  margin-top: 20px;
+}
 
-  color: #FFFFFF;
-  margin-top: 5px;
-  text-align: center;
-  
+.email-input,
+.name-input,
+.password-input,
+.password2-input, 
+.adress-input {
+  border: 1px solid #64C292;
+  background: white;
+  padding: 10px 10px 10px 10px; 
   border-radius: 10px;
- 
-  padding:  10px 85px 10px 85px;
- 
-  font-size: 16px;
-  
-  font-family: "Source Sans Pro", sans-serif;
-  
+  color: black;
+  width: 260px;
 }

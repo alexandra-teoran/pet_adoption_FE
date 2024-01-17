@@ -49,6 +49,7 @@ function submitLoginForm(event) {
             window.location.href = 'indexsucces.html';
         } else {
             console.log('Conectare eșuată.');
+            alert("Email sau parola gresita.");
 
         }
     })
@@ -69,4 +70,7 @@ function isValidPassword(password) {
     return passwordRegex.test(password);
 }
 
+function register(){
+    window.location.href = 'register.html';
+}
 

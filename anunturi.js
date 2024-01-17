@@ -1,6 +1,8 @@
 function initializePage() {
     const apiUrl = "http://localhost:8080/anunt";
 
+    updateNavbar();
+
     function getAnunturi(name) {
         const url = name ? `${apiUrl}/anunt/${name}` : apiUrl;
 
@@ -54,12 +56,15 @@ function initializePage() {
 
         const descriptionElement = document.createElement('p');
         descriptionElement.textContent = `Descriere: ${anunt.description}`;
+        descriptionElement.style='text-align: left;';
 
         const sellerNameElement = document.createElement('p');
         sellerNameElement.textContent = `Nume Vanzator: ${anunt.user.name}`;
+        sellerNameElement.style='text-align: left;';
 
         const emailElement = document.createElement('p');
         emailElement.textContent = `Email: ${anunt.user.email}`;
+        emailElement.style='text-align: left; ';
 
         container.appendChild(titleElement);
         container.appendChild(imageElement);
@@ -69,6 +74,7 @@ function initializePage() {
 
         const likeButton = document.createElement('button');
         likeButton.textContent = `Like (${anunt.nrLikes})`;
+        likeButton.style='background-color: #ffa31a; color: black; border: #333; padding: 10px 15px; cursor: pointer; margin-top: 10px; border-radius: 10px;';
         likeButton.id = `likeButton_${anunt.id}`;
         likeButton.addEventListener('click', () => handleLikeButtonClick(anunt.id));
 
@@ -120,6 +126,35 @@ function updateLikeButton(anuntId, nrLikes) {
         }
     });
 
+    function updateNavbar() {
+        var token = localStorage.getItem('token');
+        var navbar = document.getElementById('myNavbar');
+    
+        if (token) {
+            // Utilizatorul este autentificat, afișează "Profil" și ascunde "Conecteaza-te"
+            navbar.innerHTML = `
+                <img class="navbar-logo" height="80px" src="logo2.png" style=" width: 100px; height: 100px; border-radius: 150px 150px 150px 150px;">
+                <a class="navbar-link" href="indexsucces.html" style="text-decoration: none;">Acasa</a>
+                <a class="navbar-link" href="contact.html" style="text-decoration: none;">Contacteaza-ne!</a>
+                <a class="navbar-link" href="echipa.html" style="text-decoration: none;">Echipa</a>
+                <a class="navbar-link" href="anunturi.html" style="text-decoration: none;">Anunturi</a>
+                <a class="navbar-link" href="formularanunturi.html" style="text-decoration: none;">Posteaza anunt</a>
+                <a class="navbar-link" href="account.html" style="text-decoration: none;">Profil</a>
+            `;
+        } else {
+            // Utilizatorul nu este autentificat, afișează "Conecteaza-te" și ascunde "Profil"
+            navbar.innerHTML = `
+                <img class="navbar-logo" height="80px" src="logo2.png" style=" width: 100px; height: 100px; border-radius: 150px 150px 150px 150px;">
+                <a class="navbar-link" href="indexsucces.html" style="text-decoration: none;">Acasa</a>
+                <a class="navbar-link" href="contact.html" style="text-decoration: none;">Contacteaza-ne!</a>
+                <a class="navbar-link" href="echipa.html" style="text-decoration: none;">Echipa</a>
+                <a class="navbar-link" href="anunturi.html" style="text-decoration: none;">Anunturi</a>
+                <a class="navbar-link" href="formularanunturi.html" style="text-decoration: none;">Posteaza anunt</a>
+                <a class="navbar-link" href="login.html" style="text-decoration: none;">Conecteaza-te</a>
+            `;
+        }
+    }
+    
 
     getAnunturi();
 }

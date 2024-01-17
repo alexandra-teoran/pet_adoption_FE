@@ -1,8 +1,4 @@
 function submitForm() {
-
-    var token = localStorage.getItem('token');
-    var redirectTo = localStorage.getItem('redirectTo');
-
    
     var userId = getUserId(); 
     var title = document.getElementById('title').value;
@@ -53,3 +49,4 @@ function getUserId() {
 function back(){
     window.location.href = 'indexsucces.html';
 }
+
